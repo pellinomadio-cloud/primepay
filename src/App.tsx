@@ -143,7 +143,7 @@ export default function App() {
       const newTransaction = {
         title: 'Withdrawal',
         amount: `-₦${amount.toLocaleString()}`,
-        time: 'Just now',
+        time: 'Recent',
         type: 'spend'
       };
       const updatedTransactions = [newTransaction, ...transactions];
@@ -175,7 +175,7 @@ export default function App() {
       const newTransaction = {
         title: `${type} Purchase`,
         amount: `-₦${amount.toLocaleString()}`,
-        time: 'Just now',
+        time: 'Recent',
         type: 'spend'
       };
       const updatedTransactions = [newTransaction, ...transactions];
@@ -213,7 +213,7 @@ export default function App() {
       const newTransaction = {
         title: 'Daily Claim',
         amount: `+₦${amount.toLocaleString()}`,
-        time: 'Just now',
+        time: 'Recent',
         type: 'earn'
       };
       const updatedTransactions = [newTransaction, ...transactions];
@@ -242,7 +242,7 @@ export default function App() {
       const newTransaction = {
         title: isCorrect ? 'Gaming Reward' : 'Gaming Deduction',
         amount: isCorrect ? `+₦${amount.toLocaleString()}` : `-₦${amount.toLocaleString()}`,
-        time: 'Just now',
+        time: 'Recent',
         type: isCorrect ? 'earn' : 'spend'
       };
       const updatedTransactions = [newTransaction, ...transactions];
